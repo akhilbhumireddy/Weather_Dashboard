@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Weather Dashboard Assignment
 
-## Available Scripts
+## Objective
 
-In the project directory, you can run:
+Create a Weather Dashboard that shows the current weather and a 5-day forecast for a given city. The dashboard should use the OpenWeatherMap API and a JSON server to store and manage favorite cities.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js
+- **API**: OpenWeatherMap API
+- **Backend**: JSON Server for storing favorite cities
+- **Styling**: CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Completion Instructions
 
-### `npm test`
+### Functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Must Have
 
-### `npm run build`
+- Search for a city and display the current weather and a 5-day forecast.
+- Add cities to a list of favorites.
+- Remove cities from the list of favorites.
+- Display weather data for favorite cities.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Nice to Have
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Add local storage to remember the user's last searched city.
+- Implement a toggle to switch between Celsius and Fahrenheit.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Guidelines to Develop the Project
 
-### `npm run eject`
+#### Must Have
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Create React components for:
+  - A main component to display the weather dashboard.
+  - A search component to enter the city name.
+  - A weather display component for current weather and the forecast.
+  - A favorites component to display and manage favorite cities.
+- Use CSS to style the application for an appealing user experience.
+- Use a JSON server to manage favorite cities with CRUD operations.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Nice to Have
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Follow best practices for React development and CSS styling.
+- Optimize user experience by implementing error handling and responsive design.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Submission Instructions
 
-## Learn More
+#### Must Have
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Provide the source code in a GitHub repository.
+- Include a README.md file with:
+  - Instructions to run the application.
+  - Details on obtaining an OpenWeatherMap API key.
+- Deploy the application and share the deployment link.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Nice to Have
 
-### Code Splitting
+- Include clear comments in the code for better readability.
+- Add screenshots or a short demo video link to the README.md file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Resources
 
-### Analyzing the Bundle Size
+### Design Files
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+No specific design files provided. Create a clean, user-friendly UI.
 
-### Making a Progressive Web App
+### APIs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **OpenWeatherMap API**:
+  - Endpoint for current weather: `https://api.openweathermap.org/data/2.5/weather`
+  - Endpoint for 5-day forecast: `https://api.openweathermap.org/data/2.5/forecast`
+  - Documentation: [OpenWeatherMap API Docs](https://openweathermap.org/api)
 
-### Advanced Configuration
+### Third-party Packages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- JSON Server: For managing favorite cities.
+- Axios or Fetch API: For making API requests to OpenWeatherMap.
 
-### Deployment
+## Deployment and Submission Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Deployment**: [Weather Dashboard](https://akhilswetherdashboard.netlify.app/)
+- **GitHub Repository**: [Weather Dashboard GitHub Repo](https://github.com/akhilbhumireddy/Weather_Dashboard.git)
