@@ -1,0 +1,92 @@
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.favorite-component {
+  background: rgba(255, 255, 255, 0.1);
+
+  border-radius: 20px;
+  padding: 2rem;
+  animation: slideUp 0.5s ease-out;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.favorite-component h3 {
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.favorite-component ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.favorite-component li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.favorite-component li:hover {
+  transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.favorite-component li span {
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.favorite-component li button {
+  background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.favorite-component li button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .favorite-component {
+    padding: 1.5rem;
+  }
+
+  .favorite-component li {
+    flex-direction: row;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .favorite-component li {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .favorite-component li button {
+    width: 100%;
+  }
+}

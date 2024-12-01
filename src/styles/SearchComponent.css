@@ -1,0 +1,116 @@
+/* Keyframes for animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Main search component */
+.search-component {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  animation: slideDown 0.5s ease-out;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.search-component form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping for small screens */
+  gap: 1rem;
+  position: relative;
+}
+
+.search-component input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  padding-left: 3rem; /* Space for search icon */
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-component input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-component input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.search-component button {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+  border: none;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.search-component button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styles */
+.search-component .search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .search-component form {
+    flex-direction: column; /* Stack input and button */
+    align-items: stretch;
+  }
+
+  .search-component input {
+    width: 100%; /* Full width for input */
+    border-radius: 8px;
+  }
+
+  .search-component button {
+    width: 100%; /* Full width for button */
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-component input {
+    padding: 0.8rem 1rem 0.8rem 2.5rem; /* Adjust padding */
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  .search-component .search-icon {
+    left: 0.8rem; /* Adjust icon position */
+    width: 16px;
+    height: 16px;
+  }
+}
